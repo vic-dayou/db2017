@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>The blah</title>
+    <link rel="stylesheet" type="text/css" href="/static/homework.css"> 
+	<script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/register.js"></script>
+	<script type="text/javascript" src="/static/js/main.js"></script>
+	<style type='text/css'>
+	.div1{
+		position:absolute;
+		right:20px;
+		top:10px;
+	}
+	.div_login{
+	height:300px;
+	width:100%;
+	background:#f3f3f3;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	display:none;
+	
+	}
+	.div_register{
+	height:200px;
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	background:#f3f3f3 url(/static/images/bg_login.jpg);
+	display:none;
+	}
+	.div_login ul{
+	text-align:center;
+	}
+	.div_login ul li{
+	list-style:none;
+	}
+	#div_form{
+	position:fixed;
+	left:500px;
+	}
+	.div_register ul li {
+	list-style:none;
+	}
+	</style>
+</head>
+<body>
+<div class="div_header"> 
+	<div class='div1'>
+		<span class="span_login"><a href="#">登录</a></span>
+		<span class="span_register"><a href='#'>注册</a></span>
+	</div>
+	<div class="div2">
+		<div class="div_login">
+			<form>
+				<ul>
+					<li>
+						<label>用户名:</label>
+						<input type="text" name="log_name" id="log_name">
+						<span class="error_tip">提示信息</span>
+					</li>					
+					<li>
+						<label>密&nbsp &nbsp码:</label>
+						<input type="password" name="log_pwd" id="log_pwd">
+						<span class="error_tip">提示信息</span>
+					</li>
+					<li>
+						<label>验证码:</label>
+						<input type="text" name="captcha" id="captcha">
+						<span class="error_tip">提示信息</span>
+					</li>
+				
+					<li class="log_sub">
+						<input type="submit" value="登  录" name="">
+					</li>
+				</ul>				
+			</form>
+		</div>
+		<div class="div_register">
+			<div id="div_form">
+			<form id="reg_form">
+				<ul>
+					<li>
+						<label>&nbsp &nbsp用户名:</label>
+						<input type="text" name="register_name" id="register_name">
+						<span class="error_tip">提示信息</span>
+					</li>					
+					<li>
+						<label>&nbsp &nbsp密&nbsp &nbsp码:</label>
+						<input type="password" name="register_pwd" id="register_pwd">
+						<span class="error_tip">提示信息</span>
+					</li>
+					<li>
+						<label>确认密码:</label>
+						<input type="password" name="cpwd" id="register_cpwd">
+						<span class="error_tip">提示信息</span>
+					</li>
+					<li>
+						<label>&nbsp &nbsp邮&nbsp &nbsp箱:</label>
+						<input type="text" name="email" id="email">
+						<span class="error_tip">提示信息</span>
+					</li>
+
+					<li>
+						<label>&nbsp &nbsp验证码:</label>
+						<input type="text" name="reg_captcha" id="reg_captcha"><div id="div_img"><img src="#" id="img" height="25px" width="100px"></img></div>
+						<span class="error_tip">提示信息</span>
+					</li>
+					<li class="agreement">
+						<input type="checkbox" name="allow" id="allow" checked="checked">
+						<label>同意”KJXZ用户使用协议“</label>
+						<span class="error_tip2">提示信息</span>
+					</li>
+					<li class="reg_sub">
+						<input type="button" value="注 册" name="" id="btn">
+					</li>
+				</ul>				
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="div_body">
+	
+    <div class="header"> 
+        <img src="/static/images/blah.png">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Other</a></li>
+        </ul>
+    </div>
+    <div class="main-content"> 
+        <h2>The Beach</h2>  
+        <hr> 
+        <ul class="photos"> 
+            <li><img src="/static/images/0001.jpg" width="150" height="150" alt="Pic1"></li> 
+            <li><img src="/static/images/0003.jpg" width="150" height="150" alt="Pic2"></li>
+            <li><img src="/static/images/0004.jpg" width="150" height="150" alt="Pic3"></li>
+        </ul>
+        <p> <!--p标签实现一段文字的效果-->
+            stretching from Solta to Mljet, and this unique cycling trip captures the highlights with an ideal
+            balance of activity, culture and relaxation. Experience the beautiful island of Korcula with its picturesque old town,
+            the untouched beauty of Vis, and trendy Hvar with its Venetian architecture. In the company of a cycling guide,
+            this stimulating journey explores towns and landscapes, many of which are on UNESCO's world heritage list.
+            Aboard the comfortably appointed wooden motor yacht,
+            there is ample time between cycles to swim in the azure waters and soak up the ambience of seaside towns.
+        </p>
+
+
+    </div>
+    <div class="footer"> 
+        <p>&copy; Yuhia@kjxz.com</p> <!--&copy;是©的固定写法-->
+    </div>
+</div>
+</body>
+</html>
